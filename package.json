@@ -1,0 +1,23 @@
+{
+  "name": "devdocs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:marco-souza/devdocs.git",
+  "author": "Marco Antônio <ma.souza.junior@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn electron index.js",
+    "build": "yarn electron-builder"
+
+  },
+  "devDependencies": {
+    "electron": "^4.0.5",
+    "electron-builder": "^20.38.5"
+  },
+  "build": {
+    "appId": "io.devdocs",
+    "linux": {
+      "target": "Appimage"
+    }
+  }
+}
